@@ -9,6 +9,13 @@ import grate from "./images/grateful.jpeg";
 import sleep from "./images/sleep.jpg";
 import trust from "./images/trust.png";
 import moment from "./images/moment.jpg";
+
+import over from "./images/over.jpg";
+import stress from "./images/stress.jpg";
+import anger from "./images/anger.jpg";
+import anxiety from "./images/anxiety.jpg";
+import bipolar from "./images/bipolar.jpg";
+import dip from "./images/dipression.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -143,6 +150,49 @@ function HumanifyFrontPage() {
       </div>
 
       {/*common*/}
+      <div className='container'>
+        <div className='common'>
+          <div>
+            <div className='image'>
+              <p className='somepara' data-aos='slide-right'>
+                <h4 className='some' data-aos='fade-up'>
+                  Some Common Issues
+                </h4>
+                <p className='margin' data-aos='fade-right'>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Provident quia ab quod necessitatibus magnam aliquam alias
+                  dolore aut accusantium? Libero tenetur expedita fugit tempora
+                  accusantium odio porro nam officiis deserunt.
+                </p>
+              </p>
+            </div>
+          </div>
+          <div className='image' data-aos='zoom-in'>
+            <h1>DIPRESSION</h1>
+            <img className='i1' src={dip} alt='' />
+          </div>
+          <div className='image' data-aos='zoom-in'>
+            <h1>OVERTHINKING</h1>
+            <img src={over} alt='' />
+          </div>
+          <div className='image' data-aos='zoom-in'>
+            <h1>STRESS</h1>
+            <img src={stress} alt='' />
+          </div>
+          <div className='image' data-aos='zoom-in'>
+            <h1>ANXIETY</h1>
+            <img src={anxiety} alt='' />
+          </div>
+          <div className='image' data-aos='zoom-in'>
+            <h1>BIPOLAR</h1>
+            <img src={bipolar} alt='' />
+          </div>
+          <div className='image' data-aos='zoom-in'>
+            <h1>ANGER</h1>
+            <img src={anger} alt='' />
+          </div>
+        </div>
+      </div>
 
       {/*story*/}
       <div className='story'>
@@ -152,10 +202,14 @@ function HumanifyFrontPage() {
         <div className='storyform'>
           <div className='form'>
             <div>
-              <input placeholder='Your Name'></input>
+              <input placeholder='Name'></input>
             </div>
             <div>
-              <textarea placeholder='Your story' rows='6' cols='20' />
+              <textarea
+                placeholder='Share Your Story...'
+                rows='16'
+                cols='100'
+              />
             </div>
           </div>
         </div>
