@@ -5,17 +5,20 @@ import alone from "./images/alone.jpg";
 import food from "./images/foodd.jpg";
 import kind from "./images/kind.jpg";
 import connect from "./images/connect1.png";
-import grate from "./images/grateful.jpeg";
+import grate from "./images/grate.jpg";
 import sleep from "./images/sleep.jpg";
 import trust from "./images/trust.png";
 import moment from "./images/moment.jpg";
-
+import wall from "./images/wall.jpg";
+import mood from "./images/mood1.gif";
 import over from "./images/over.jpg";
 import stress from "./images/stress.jpg";
 import anger from "./images/anger.jpg";
 import anxiety from "./images/anxiety.jpg";
 import bipolar from "./images/bipolar.jpg";
 import dip from "./images/dipression.jpg";
+import videocall from "./images/callvideo.gif";
+import chat from "./images/moodd.gif";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -33,7 +36,7 @@ function HumanifyFrontPage() {
           <h2 className='logo'>Travel</h2>
           <div className='toggle '></div>
         </header>
-        <video src={video} muted loop autoPlay></video>
+        {/* <img src={mood}></img> */}
         <div className='overlay'></div>
         <div className='text'>
           <h3>You Are</h3>
@@ -169,6 +172,7 @@ function HumanifyFrontPage() {
           </div>
           <div className='image' data-aos='zoom-in'>
             <h1>DIPRESSION</h1>
+            <h1 className='read'>Read it</h1>
             <img className='i1' src={dip} alt='' />
           </div>
           <div className='image' data-aos='zoom-in'>
@@ -193,14 +197,52 @@ function HumanifyFrontPage() {
           </div>
         </div>
       </div>
-
+      {/* 
+      chat and call */}
+      <div className='vc'>
+        <div className='chat '>
+          <div className='chating' data-aos='fade-right'>
+            <img src={chat} />
+          </div>
+          <div className='description' data-aos='fade-left'>
+            <h3>Let's Chat</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
+              debitis minus neque unde rerum, in quasi provident deleniti
+              perferendis aspernatur placeat magni magnam repellendus. Ab
+              delectus dolorum repellendus illo tenetur.
+            </p>
+            <button className='chatbutton' data-aos='zoom-in'>
+              CHAT
+            </button>
+          </div>
+        </div>
+        <div className='chat'>
+          <div className='description' data-aos='fade-right'>
+            <h3>Let's Call</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
+              debitis minus neque unde rerum, in quasi provident deleniti
+              perferendis aspernatur placeat magni magnam repellendus. Ab
+              delectus dolorum repellendus illo tenetur.
+            </p>
+            <button className='chatbutton'>CHAT</button>
+          </div>
+          <div className='chating' data-aos='fade-left'>
+            <img src={videocall} />
+          </div>
+        </div>
+      </div>
       {/*story*/}
       <div className='story'>
         <div className='formheading'>
-          <h3>Let's Break The Taboo</h3>
+          <h3 data-aos='zoom-in'>Let's Break The Taboo</h3>
         </div>
         <div className='storyform'>
           <div className='form'>
+            <div>
+              <button className='save'>save</button>
+            </div>
             <div>
               <input placeholder='Name'></input>
             </div>
