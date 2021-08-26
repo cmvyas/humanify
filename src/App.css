@@ -1,0 +1,17 @@
+.timer-main{
+    padding-top: 1vmax;
+    margin: 0 auto;
+    text-align: center;
+   
+}
+
+.timerbutton{
+    background-color: transparent;
+    color: white;
+    border: 0;
+    display: inline-block;
+    width:10vmax;
+    cursor: pointer;
+    padding: 10px;
+}
+

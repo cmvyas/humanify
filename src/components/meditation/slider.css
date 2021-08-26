@@ -1,0 +1,37 @@
+body{
+    background-color: black;
+}
+
+.slider{
+    height: 20px;
+    border: 1px solid rgb(53, 53, 53);
+    border-radius: 2px;
+    width: 600px;
+    background-color:transparent;
+  border-radius: 2px;
+}
+
+.thumb{
+    background-color: rgba(255, 255, 255, 0.925);
+    cursor:pointer;
+    width:40px;
+    height: 20px;
+   
+}
+
+.slider.green{
+    border: 2px solid green;
+}
+.slider.green .thumb{
+    background-color:green;
+}
+.slidermain{
+    width: 80%;
+}
+label{
+color: aliceblue;
+}
+.circular{
+    width: 30%;
+   
+}

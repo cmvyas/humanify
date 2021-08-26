@@ -21,6 +21,7 @@ import videocall from "./images/callvideo.gif";
 import chat from "./images/moodd.gif";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 function HumanifyFrontPage() {
   useEffect(() => {
@@ -226,7 +227,9 @@ function HumanifyFrontPage() {
               perferendis aspernatur placeat magni magnam repellendus. Ab
               delectus dolorum repellendus illo tenetur.
             </p>
-            <button className='chatbutton'>CHAT</button>
+            <Link to='/videocall'>
+              <button className='chatbutton'>CHAT</button>
+            </Link>
           </div>
           <div className='chating' data-aos='fade-left'>
             <img src={videocall} />
