@@ -144,18 +144,19 @@ header .logo {
   position: relative;
   right: 0;
   width: 100%;
-  min-height: 100vh;
-  padding: 20px;
+  min-height: 200vh;
+  padding: 60px 20px 140px 20px;
   background: #f7f7fafa;
   transition: 0.5s;
   z-index: 2;
-  top: 860px;
+  top: 948px;
+  bottom: 1000px;
   background: linear-gradient(
     to bottom,
     #001527 0%,
-    #00182e 25%,
-    rgb(255, 255, 255) 25%,
-    rgb(255, 255, 255) 100%
+    #00182e 30%,
+    rgb(211, 211, 211) 30%,
+    rgb(218, 218, 218) 100%
   );
 }
 .cate-home {
@@ -175,6 +176,7 @@ header .logo {
   justify-content: center;
 }
 .tips {
+  text-decoration: overline;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -183,7 +185,11 @@ header .logo {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1vmax;
-  margin: 20px 20px 10px 20px;
+  margin: 40px 20px 20px 20px;
+  font-weight: 100;
+}
+.tips h3 {
+  font-weight: 200;
 }
 .para {
   color: white;
@@ -192,16 +198,16 @@ header .logo {
   align-items: center;
   width: 100%;
   font-size: 1.5vmax;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
 .para p {
-  font-family: "Rubik", sans-serif;
-  font-weight: 600;
+  font-weight: 100;
   letter-spacing: 2px;
   text-transform: capitalize;
   text-align: center;
   width: 35%;
 }
+
 .img1 {
   position: relative;
   transition: 0.2s;
@@ -232,7 +238,7 @@ header .logo {
 .text1 p {
   display: inline-block;
   font-size: 0.5em;
-  background: #035aa6;
+  background: #000879;
   padding: 10px 20px;
 
   text-decoration: none;
@@ -268,10 +274,11 @@ header .logo {
 }
 
 .story {
+ 
   position: relative;
   right: 0;
   width: 100%;
-  top: 910px;
+  top: 900px;
   min-height: 100vh;
   padding: 10px;
   background: #f7f7fafa;
@@ -282,36 +289,8 @@ header .logo {
   background-position: fixed;
   background-repeat: no-repeat;
 }
-.storyform {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80%;
-  height: 70%;
-  position: absolute;
-  overflow: hidden;
-  border-radius: 5px;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-  background: url("./images/back.jpg");
-  -webkit-background-size: cover;
-  background-position: fixed;
-  background-repeat: no-repeat;
-}
-.storyform:before {
-  width: 100%;
-  height: 100%;
-  content: "";
-  position: absolute;
-  top: -25px;
-  left: -25px;
-  bottom: 0;
-  right: 0;
-  background: inherit;
-  box-shadow: inset 0 0 0 500px rgba(10, 0, 146, 0.2);
-  filter: blur(1000px);
-}
+
+
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #ffd6d6;
@@ -319,16 +298,31 @@ header .logo {
 }
 
 .form {
-  height: 500px;
+  height: 80%;
   width: 80%;
   position: absolute;
-  top: 45%;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+ box-shadow: 2px 2px 20px 2px rgb(70, 70, 70);
+  background-color: rgb(0, 0, 0);
+  backface-visibility: unset;
+  opacity: 0.7;
+ 
+ 
 }
+.form:before{
+  filter: blur(1000px);
+  background: inherit;
+  box-shadow: inset 0 0 0 500px rgba(10, 0, 146, 0.2);
+
+}
+
 input,
 textarea {
+  margin-left: 40px;
+  margin-top: 10px;
   border: none;
   background: transparent;
   font-size: medium;
@@ -343,35 +337,38 @@ textarea {
   outline: none;
   resize: none;
 }
-.formheading{
+.formheading {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.formheading h3{
-color:#0e0025;
-letter-spacing: 2px;
-font-weight: 400;
-font-size: 1.7vmax;
-font-family: "Rubik", sans-serif;
-border-bottom: 1px solid #0e0025;
-margin-top: 10px;
+.formheading h4 {
+  color: #0e0025;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 1.7vmax;
+  font-family: "Rubik", sans-serif;
+  border-bottom: 1px solid #0e0025;
+  text-decoration: none;
+  margin-top: 20px;
 }
-.save{
-  margin-bottom: 2px;
+.save {
+  border: 1px solid #00FF7C;
+  box-shadow: 1px 1px 5px 2px rgb(255, 255, 255);
+  margin-top: 2%;
   font-size: 1vw;
-  margin-left: 1000px;
+  margin-left: 90%;
   padding: 1px 10px;
-  background-color: #0e002591;
+  background-color: #ffffff;
   border: transparent;
-  color: wheat;
+  color: rgb(10, 7, 1);
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: capitalize;
-  border-radius: 6px;
+  border-radius: 4px;
   cursor: pointer;
 
-
+ 
 }
 
 input {
@@ -379,18 +376,35 @@ input {
   letter-spacing: 2px;
   font-weight: 300;
 }
-/*common*/
+
+
+button {
+  background: #ededed;
+  border: 1px solid #ccc;
+  padding: 10px 30px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:active {
+  background: #e5e5e5;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+          box-shadow: inset 0px 0px 5px #c1c1c1;
+   outline: none;
+}
+/* common */
 .common {
   position: relative;
   column-count: 4;
   padding: 20px;
-  padding-top: 60px;
+  padding-top: 120px;
   right: 0;
   width: 100%;
   top: 900px;
-  min-height: 100vh;
+  min-height: 120vh;
 
-  background: #f7f7fafa;
+  background: #001527;
   transition: 0.5s;
   z-index: 2;
 }
@@ -441,7 +455,7 @@ h1 {
   margin: 5px;
   font-size: 1vw;
   letter-spacing: 2px;
-  background: #003b0f;
+  background: #1b1f1c;
   color: #fff;
   border-radius: 5px;
   font-weight: 500;
@@ -452,21 +466,27 @@ h1 {
 .read {
   position: absolute;
   padding: 10px;
-  margin: 40%;
+  /* margin: 86% 82% ; */
+  bottom: 0;
+  right: 0;
   font-size: 1vw;
   letter-spacing: 2px;
-  background: #7aff9b;
-  color: #fff;
-  border-radius: 5px;
-  font-weight: 200;
-  opacity: 100;
+  background: transparent;
+  color: rgb(0, 0, 0);
+  border-radius: 20% ;
+  font-weight: 600;
+  opacity: 0;
   z-index: 10;
   transition: 0.25 ease-in-out;
-  width: max-content;
+  width: 80px;
+  
 }
 
 .image:hover h1 {
   opacity: 0.8;
+}
+.image:hover .read {
+  opacity: 1;
 }
 
 @media screen and(max-width:1024px) {
@@ -503,11 +523,12 @@ h1 {
   right: 0;
   width: 100%;
   min-height: 100vh;
-  padding: 10px;
-  background: #f4f4fdfa;
+  padding: 20px 20px 140px 20px;
+  background: #fffffffa;
   transition: 0.5s;
   z-index: 2;
-  top: 910px;
+  top: 900px;
+
 }
 .chat {
   margin-top: 60px;
@@ -518,7 +539,6 @@ h1 {
 .chating img {
   max-width: 100%;
   height: auto;
-
 }
 .description {
   text-align: left;
@@ -528,24 +548,115 @@ h1 {
 }
 
 .description h3 {
-  color: rgb(0, 61, 0);
+  color: #002f08;
   font-size: 1.4vmax;
   margin: 10px;
-  font-weight: 400;
+  font-weight: 600;
   text-decoration: overline;
 }
 .description p {
-  color: #004b8d;
+  color: #303046;
   margin: 10px;
   margin-bottom: 20px;
+  font-weight: 400;
 }
 .chatbutton {
   padding: 0.6vw 1.3vw;
-  background-color: #004b8d;
+  background-color: #002f08ea;
   color: white;
   font-size: 0.8vmax;
   letter-spacing: 2px;
   border: none;
   cursor: pointer;
   margin-left: 10px;
+ 
+}
+
+.chatbutton:hover{
+  
+  background-color: #002f08;
+  
+}
+
+
+.footer{
+  position: relative;
+  right: 0;
+  width: 100%;
+  min-height: 45vh;
+  padding: 0;
+  filter: contrast(140%);
+  transition: 0.5s;
+  z-index: 300;
+  top: 1000px;
+}
+.container{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footerr{
+  background-color:  #91c788;
+    padding: 10px 0;
+}
+.footer-col{
+   width: 24%;
+   padding: 0 2px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #1f441e;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: white;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color:  #1f441e;
+  text-decoration: none;
+  font-weight: 400;
+  color:  #1f441e;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color:  #1f441e;;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color:  #1f441e;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: white;
 }

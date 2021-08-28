@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import video from "./video.mp4";
+
 import "./new.css";
 import alone from "./images/alone.jpg";
 import food from "./images/foodd.jpg";
@@ -17,7 +17,7 @@ import anger from "./images/anger.jpg";
 import anxiety from "./images/anxiety.jpg";
 import bipolar from "./images/bipolar.jpg";
 import dip from "./images/dipression.jpg";
-import videocall from "./images/callvideo.gif";
+import videocall from "./images/sad.gif";
 import chat from "./images/moodd.gif";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -34,7 +34,7 @@ function HumanifyFrontPage() {
           //home
         }
         <header>
-          <h2 className='logo'>Travel</h2>
+          <h2 className='logo'>Humanify</h2>
           <div className='toggle '></div>
         </header>
         {/* <img src={mood}></img> */}
@@ -173,27 +173,110 @@ function HumanifyFrontPage() {
           </div>
           <div className='image' data-aos='zoom-in'>
             <h1>DIPRESSION</h1>
-            <h1 className='read'>Read it</h1>
+            <h1 className='read'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                className='h-5 w-5'
+                viewBox='0 0 20 20'
+                fill='currentColor'
+              >
+                <path
+                  fillRule='evenodd'
+                  d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z'
+                  clipRule='evenodd'
+                />
+              </svg>
+            </h1>
             <img className='i1' src={dip} alt='' />
           </div>
           <div className='image' data-aos='zoom-in'>
             <h1>OVERTHINKING</h1>
+            <h1 className='read'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                className='h-5 w-5'
+                viewBox='0 0 20 20'
+                fill='currentColor'
+              >
+                <path
+                  fillRule='evenodd'
+                  d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z'
+                  clipRule='evenodd'
+                />
+              </svg>
+            </h1>
             <img src={over} alt='' />
           </div>
           <div className='image' data-aos='zoom-in'>
             <h1>STRESS</h1>
+            <h1 className='read'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                className='h-5 w-5'
+                viewBox='0 0 20 20'
+                fill='currentColor'
+              >
+                <path
+                  fillRule='evenodd'
+                  d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z'
+                  clipRule='evenodd'
+                />
+              </svg>
+            </h1>
             <img src={stress} alt='' />
           </div>
           <div className='image' data-aos='zoom-in'>
             <h1>ANXIETY</h1>
+            <h1 className='read'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                className='h-5 w-5'
+                viewBox='0 0 20 20'
+                fill='currentColor'
+              >
+                <path
+                  fillRule='evenodd'
+                  d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z'
+                  clipRule='evenodd'
+                />
+              </svg>
+            </h1>
             <img src={anxiety} alt='' />
           </div>
           <div className='image' data-aos='zoom-in'>
             <h1>BIPOLAR</h1>
+            <h1 className='read'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                className='h-5 w-5'
+                viewBox='0 0 20 20'
+                fill='currentColor'
+              >
+                <path
+                  fillRule='evenodd'
+                  d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z'
+                  clipRule='evenodd'
+                />
+              </svg>
+            </h1>
             <img src={bipolar} alt='' />
           </div>
           <div className='image' data-aos='zoom-in'>
             <h1>ANGER</h1>
+            <h1 className='read'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                className='h-5 w-5'
+                viewBox='0 0 20 20'
+                fill='currentColor'
+              >
+                <path
+                  fillRule='evenodd'
+                  d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z'
+                  clipRule='evenodd'
+                />
+              </svg>
+            </h1>
             <img src={anger} alt='' />
           </div>
         </div>
@@ -202,36 +285,41 @@ function HumanifyFrontPage() {
       chat and call */}
       <div className='vc'>
         <div className='chat '>
-          <div className='chating' data-aos='fade-right'>
+          <div className='chating' data-aos='slide-right'>
             <img src={chat} />
           </div>
-          <div className='description' data-aos='fade-left'>
+          <div className='description' data-aos='slide-left'>
             <h3>Let's Chat</h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
-              debitis minus neque unde rerum, in quasi provident deleniti
-              perferendis aspernatur placeat magni magnam repellendus. Ab
-              delectus dolorum repellendus illo tenetur.
+              Hey, Do you feel like that you are alone? Or it is difficult for
+              you to find the right person to talk to you at this time, Or you
+              are scared that you are different? <br />
+              Hey, you are not alone in this, Humanify is there for you, using
+              our live chat feature you can find people who are facing similar
+              issues and problems and can help each other in this fight, do try
+              it once.
             </p>
-            <button className='chatbutton' data-aos='zoom-in'>
-              CHAT
-            </button>
+            <Link to='/chat'>
+              <button className='chatbutton' data-aos='zoom-in'>
+                CHAT
+              </button>
+            </Link>
           </div>
         </div>
         <div className='chat'>
-          <div className='description' data-aos='fade-right'>
-            <h3>Let's Call</h3>
+          <div className='description' data-aos='slide-right'>
+            <h3>Let's Focus</h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
-              debitis minus neque unde rerum, in quasi provident deleniti
-              perferendis aspernatur placeat magni magnam repellendus. Ab
-              delectus dolorum repellendus illo tenetur.
+              Hey heard of the term "Meditation", yes it's a very, very helpful
+              practice for fighting mental health, it helps in focusing,
+              concentrating, bringing self to the moment over and over again,
+              reduce stress anxiety, and depression, so let's do this for self.
             </p>
-            <Link to='/videocall'>
-              <button className='chatbutton'>CHAT</button>
+            <Link to='/meditate'>
+              <button className='chatbutton'>FOCUS</button>
             </Link>
           </div>
-          <div className='chating' data-aos='fade-left'>
+          <div className='chating' data-aos='slide-left'>
             <img src={videocall} />
           </div>
         </div>
@@ -239,26 +327,99 @@ function HumanifyFrontPage() {
       {/*story*/}
       <div className='story'>
         <div className='formheading'>
-          <h3 data-aos='zoom-in'>Let's Break The Taboo</h3>
+          <h4 data-aos='zoom-in'>Let's Break The Taboo</h4>
         </div>
-        <div className='storyform'>
-          <div className='form'>
-            <div>
-              <button className='save'>save</button>
-            </div>
-            <div>
-              <input placeholder='Name'></input>
-            </div>
-            <div>
-              <textarea
-                placeholder='Share Your Story...'
-                rows='16'
-                cols='100'
-              />
-            </div>
+
+        <div className='form'>
+          <div>
+            <button className='save'>save</button>
+          </div>
+          <div>
+            <input placeholder='Name'></input>
+          </div>
+          <div>
+            <textarea placeholder='Share Your Story...' rows='16' cols='100' />
           </div>
         </div>
       </div>
+
+      {/*footer*/}
+      <footer className='footerr'>
+        <div className='container'>
+          <div className='row'>
+            <div className='footer-col'>
+              <h4>GO GREEN</h4>
+              <ul>
+                <li>
+                  <a href='#'>about us</a>
+                </li>
+                <li>
+                  <a href='#'>24x7 services</a>
+                </li>
+                <li>
+                  <a href='#'>Free Delivery</a>
+                </li>
+              </ul>
+            </div>
+            <div className='footer-col'>
+              <h4>Shop with Us</h4>
+              <ul>
+                <li>
+                  <a href='#'>Air plant</a>
+                </li>
+                <li>
+                  <a href='#'>water plant</a>
+                </li>
+                <li>
+                  <a href='#'>indoor plant</a>
+                </li>
+              </ul>
+            </div>
+            <div className='footer-col'>
+              <h4>Special Offers</h4>
+              <ul>
+                <li>
+                  <a href='#'>Office plant</a>
+                </li>
+                <li>
+                  <a href='#'>Vase</a>
+                </li>
+                <li>
+                  <a href='#'>pot</a>
+                </li>
+              </ul>
+            </div>
+            <div className='footer-col'>
+              <h4>follow us</h4>
+              <div className='social-links'>
+                <a href='#'>
+                  <i class='fab fa-facebook-f'></i>
+                </a>
+                <a href='#'>
+                  <i class='fab fa-twitter'></i>
+                </a>
+                <a href='#'>
+                  <i class='fab fa-instagram'></i>
+                </a>
+                <a href='#'>
+                  <i class='fab fa-linkedin-in'></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: "80px",
+            color: "#1f441e",
+          }}
+        >
+          <p>Made With ❤️ By CM_Vyas</p>
+        </div>
+      </footer>
     </div>
   );
 }

@@ -1,21 +1,28 @@
 body{
-    background-color: black;
+    background:url(../humanifymain/images/sa.gif);
+    background-repeat: no-repeat;
+    background-position:right;
+    background-size:50%;
+background-clip: border-box;
+    background-color: #042234;
+    background-attachment: fixed;
 }
 
 .slider{
     height: 20px;
-    border: 1px solid rgb(53, 53, 53);
+    border: 1px solid rgb(0, 80, 112);
     border-radius: 2px;
     width: 600px;
-    background-color:transparent;
+    background-color:#042234;
   border-radius: 2px;
 }
 
 .thumb{
-    background-color: rgba(255, 255, 255, 0.925);
+    background-color: rgba(0, 90, 131, 0.925);
     cursor:pointer;
-    width:40px;
-    height: 20px;
+    width:42px;
+    height: 22px;
+    border-radius: 2px;
    
 }
 
@@ -30,6 +37,8 @@ body{
 }
 label{
 color: aliceblue;
+font-size: 1vw;
+padding: 2px;
 }
 .circular{
     width: 30%;

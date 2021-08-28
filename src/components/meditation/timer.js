@@ -2,14 +2,15 @@ import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import PlayButton from "./PlayButton";
 import PauseButton from "./PauseButton";
-import SettingsButton from "./SettingsButton";
+import { Link } from "react-router-dom";
 import { useContext, useState, useEffect, useRef } from "react";
 import SettingsContext from "./SettingsContext";
 import ReactSlider from "react-slider";
 import "./slider.css";
+import PlaySound from "./PlaySound";
 
-const red = "#3567cc";
-const green = "#B97A95";
+const red = "#BEAEE2";
+const green = "#E5B299";
 
 function Timer() {
   const settingsInfo = useContext(SettingsContext);
@@ -65,12 +66,18 @@ function Timer() {
       : settingsInfo.breakMinutes * 60;
   const percentage = Math.round((secondsLeft / totalSeconds) * 100);
 
-  const minutes = Math.floor(secondsLeft / 60);
+  let minutes = Math.floor(secondsLeft / 60);
   let seconds = secondsLeft % 60;
   if (seconds < 10) seconds = "0" + seconds;
+  if (minutes < 10) minutes = "0" + minutes;
 
   return (
     <div className='timer-main'>
+      <header>
+        <Link style={{ textDecoration: " none" }} to='/'>
+          <h2 className='logo'>HumaniFY</h2>
+        </Link>
+      </header>
       <CircularProgressbar
         className='circular'
         value={percentage}
@@ -81,7 +88,7 @@ function Timer() {
           tailColor: "rgba(255,255,255,.2)",
         })}
       />
-      <div style={{ marginTop: "20px" }}>
+      <div className='timermusic' style={{ marginTop: "20px" }}>
         {isPaused ? (
           <PlayButton
             onClick={() => {
@@ -97,6 +104,8 @@ function Timer() {
             }}
           />
         )}
+
+        <PlaySound />
       </div>
 
       <div style={{ textAlign: "left" }} className='sliderdiv'>
@@ -109,7 +118,7 @@ function Timer() {
             value={settingsInfo.workMinutes}
             onChange={(newValue) => settingsInfo.setWorkMinutes(newValue)}
             min={1}
-            max={120}
+            max={60}
           />
         </center>
       </div>

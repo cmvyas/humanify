@@ -10,8 +10,14 @@
     color: white;
     border: 0;
     display: inline-block;
-    width:10vmax;
+    width:8vmax;
     cursor: pointer;
     padding: 10px;
+  
 }
 
+.timermusic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
