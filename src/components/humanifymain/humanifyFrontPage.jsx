@@ -51,7 +51,6 @@ function HumanifyFrontPage() {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <a href='#'>Explore</a>
         </div>
       </div>
 
@@ -344,82 +343,14 @@ function HumanifyFrontPage() {
       </div>
 
       {/*footer*/}
-      <footer className='footerr'>
-        <div className='container'>
-          <div className='row'>
-            <div className='footer-col'>
-              <h4>GO GREEN</h4>
-              <ul>
-                <li>
-                  <a href='#'>about us</a>
-                </li>
-                <li>
-                  <a href='#'>24x7 services</a>
-                </li>
-                <li>
-                  <a href='#'>Free Delivery</a>
-                </li>
-              </ul>
-            </div>
-            <div className='footer-col'>
-              <h4>Shop with Us</h4>
-              <ul>
-                <li>
-                  <a href='#'>Air plant</a>
-                </li>
-                <li>
-                  <a href='#'>water plant</a>
-                </li>
-                <li>
-                  <a href='#'>indoor plant</a>
-                </li>
-              </ul>
-            </div>
-            <div className='footer-col'>
-              <h4>Special Offers</h4>
-              <ul>
-                <li>
-                  <a href='#'>Office plant</a>
-                </li>
-                <li>
-                  <a href='#'>Vase</a>
-                </li>
-                <li>
-                  <a href='#'>pot</a>
-                </li>
-              </ul>
-            </div>
-            <div className='footer-col'>
-              <h4>follow us</h4>
-              <div className='social-links'>
-                <a href='#'>
-                  <i class='fab fa-facebook-f'></i>
-                </a>
-                <a href='#'>
-                  <i class='fab fa-twitter'></i>
-                </a>
-                <a href='#'>
-                  <i class='fab fa-instagram'></i>
-                </a>
-                <a href='#'>
-                  <i class='fab fa-linkedin-in'></i>
-                </a>
-              </div>
-            </div>
-          </div>
+      <div className='footer'>
+        <div className='formheadingg'>
+          <h4 data-aos='zoom-in'>" Toghter We Can Do Wonders ~ HUMANIFY "</h4>
         </div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            marginTop: "80px",
-            color: "#1f441e",
-          }}
-        >
+        <div className='cmvyas'>
           <p>Made With ❤️ By CM_Vyas</p>
         </div>
-      </footer>
+      </div>
     </div>
   );
 }
