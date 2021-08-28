@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/humanify/static/css/main.2e26d3be.chunk.css",
-    "main.js": "/humanify/static/js/main.4f1e391c.chunk.js",
-    "main.js.map": "/humanify/static/js/main.4f1e391c.chunk.js.map",
+    "main.js": "/humanify/static/js/main.814113fb.chunk.js",
+    "main.js.map": "/humanify/static/js/main.814113fb.chunk.js.map",
     "runtime-main.js": "/humanify/static/js/runtime-main.7446bd54.js",
     "runtime-main.js.map": "/humanify/static/js/runtime-main.7446bd54.js.map",
     "static/css/2.cc95488f.chunk.css": "/humanify/static/css/2.cc95488f.chunk.css",
@@ -39,6 +39,6 @@
     "static/css/2.cc95488f.chunk.css",
     "static/js/2.eeea784e.chunk.js",
     "static/css/main.2e26d3be.chunk.css",
-    "static/js/main.4f1e391c.chunk.js"
+    "static/js/main.814113fb.chunk.js"
   ]
 }
