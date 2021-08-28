@@ -34,7 +34,7 @@ function HumanifyFrontPage() {
           //home
         }
         <header>
-          <h2 className='logo'>Humanify</h2>
+          <h2 className='logo'></h2>
           <div className='toggle '></div>
         </header>
         {/* <img src={mood}></img> */}

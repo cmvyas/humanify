@@ -73,11 +73,11 @@ function Timer() {
 
   return (
     <div className='timer-main'>
-      <header>
+      {/* <header>
         <Link style={{ textDecoration: " none" }} to='/'>
           <h2 className='logo'>HumaniFY</h2>
         </Link>
-      </header>
+      </header> */}
       <CircularProgressbar
         className='circular'
         value={percentage}

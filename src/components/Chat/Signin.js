@@ -19,11 +19,11 @@ function Signin() {
         alignItems: "center",
       }}
     >
-      <header>
+      {/* <header>
         <Link to='/' style={{ textDecoration: " none" }}>
           <h2 className='logo'>HUmanify</h2>
         </Link>
-      </header>
+      </header> */}
       <Button
         onClick={signInWithGoogle}
         style={{

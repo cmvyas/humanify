@@ -1,5 +1,6 @@
 import { render } from "@testing-library/react";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./App.css";
 import "./components/Chat/chat.css";
 import HumanifyFrontPage from "./components/humanifymain/humanifyFrontPage";
@@ -21,6 +22,11 @@ function App() {
   return (
     <div className='App'>
       <Router>
+        <header>
+          <Link to='/' style={{ textDecoration: "none" }}>
+            <h2 className='logo'>Humanify</h2>
+          </Link>
+        </header>
         <Switch>
           <Route path='/' exact>
             <HumanifyFrontPage />
