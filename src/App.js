@@ -12,6 +12,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import SettingsContext from "./components/meditation/SettingsContext";
 import Chat from "./components/Chat/Chat";
 import Signin from "./components/Chat/Signin";
+import Home from "./components/home";
 
 function App() {
   const [workMinutes, setWorkMinutes] = useState(15);
@@ -23,14 +24,16 @@ function App() {
     <div className='App'>
       <Router>
         <header>
-          <Link to='/' style={{ textDecoration: "none" }}>
+          <Link to='/humanify' style={{ textDecoration: "none" }}>
             <h2 className='logo'>Humanify</h2>
           </Link>
         </header>
+
         <Switch>
           <Route path='/' exact>
-            <HumanifyFrontPage />
+            <Home />
           </Route>
+          <Route path='/humanify' component={HumanifyFrontPage}></Route>
           <Route path='/meditate'>
             <SettingsContext.Provider
               value={{

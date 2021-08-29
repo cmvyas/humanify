@@ -11,7 +11,7 @@ function Signout() {
           justifyContent: "flex-end",
           position: "fixed",
           width: "93%",
-
+          marginTop: "80px",
           backgroundColor: "transparent",
           top: "2px",
 

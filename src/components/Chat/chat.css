@@ -8,11 +8,11 @@
    
 }
 .color{
-    margin-top: 20px;
+    margin-top: 80px;
     background: url('../humanifymain/images/cw.jpg');
     background-color: rgba(255, 255, 255, 0.932);
     overflow-y: scroll;
-    height: 90vh;
+    height: 86vh;
     border-radius: 20px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
